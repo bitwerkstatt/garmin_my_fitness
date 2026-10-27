@@ -1,0 +1,20 @@
+# Data (never commit)
+data/
+
+# Personal configuration and secrets
+config.toml
+*.key
+*api-key*
+*token*.json
+.env
+
+# Python / uv
+.venv/
+__pycache__/
+*.pyc
+
+# Notebooks
+.ipynb_checkpoints/
+
+# macOS
+.DS_Store

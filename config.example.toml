@@ -1,0 +1,18 @@
+# Vorlage für config.toml (wird nicht committet).
+# Kopieren: cp config.example.toml config.toml
+
+[athlete]
+# Maximale Herzfrequenz in bpm (für TRIMP, ab M5)
+hr_max = 190
+# "male" oder "female": wählt die TRIMP-Konstanten k1/k2
+sex = "male"
+
+[ingest]
+# Pause zwischen zwei API-Aufrufen in Sekunden
+request_pause_s = 1.0
+# Versuche bei HTTP 429 oder 5xx
+max_retries = 3
+# Zeitraum beim Erstlauf in Tagen
+initial_days = 400
+# Die letzten n Tage werden bei jedem Update neu geladen (Nachsynchronisation der Uhr)
+refetch_days = 3
